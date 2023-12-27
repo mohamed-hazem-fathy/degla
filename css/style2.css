@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+  }
+  .clearfix {
+    clear: both;
+  }
+  main {
+    min-height: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  /*style For Header*/
+  header {
+    min-height: 80px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg,#000 8% 48%,#999);
+    z-index: 999;
+  }
+  /*stylr For Logo*/
+  header .logo {
+    width: 88px;
+    height: 80px;
+    float: left;
+    margin-left: 20px;
+
+  }
+  header .logo img{
+    height: 100%;
+  }
+  /*Style For Nav*/
+  header nav {
+    width: 600px;
+    height: 100%px;
+    float: right;
+  }
+  header nav li {
+    width: 150px;
+    height: 100%;
+    float: left;
+  }
+  header nav li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 80px;
+    display: block;
+    transition: all .5s;
+  }
+  header nav li a:hover{
+    background:gold ;
+    color: #000;
+  }
+  /* Style for section 1 */
+  section:first-of-type{
+    height: 70vh;
+    background-color: gold;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .inner-section1 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../images/banner.jpg) center/cover;
+    clip-path: circle(60% at 50% 30%);
+
+
+  }
+.searsh {
+    width: 250px;
+    height: 60px;
+    background-color: #000;
+    position: fixed;
+    top: 20%;
+    left: -190px;
+    border-radius: 0 20px 20px 0;
+    transition: 1s all;
+}
+.searsh input {
+    float: left;
+    margin-block: 20px;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    
+}
+.searsh img {
+    height: 50px;
+    float: left
+    ;
+    cursor: pointer;
+}
+.searsh:hover{
+    left: 0;
+}
+/*style For Section2*/
+section:nth-of-type(2) {
+position: relative;
+min-height: 300px;
+top: -100px;
+
+}
+section:nth-of-type(2) .blocks {
+    width: 70%;
+    margin: auto;
+    min-height: 300px;
+}
+.blocks .block {
+    width: 20%;
+    height: 180px;
+    border: 1px solid gold;
+    border-radius: 20px;
+    float: left;
+    margin-inline: calc(20% / 8);
+    margin-block: 60px;
+    overflow: hidden;
+}
+.blocks .block:first-of-type {
+    background: #fff url(../images/footballacademy.jpg) no-repeat center/100%;
+}
+.blocks .block:nth-of-type(2) {
+    background: #fff url(../images/squashacademy.jpg) no-repeat center/100%;
+}
+.blocks .block:nth-of-type(3) {
+    background: #fff url(../images/swimmingacademy.jpg) no-repeat center/100%;
+}
+.blocks .block:nth-of-type(4) {
+    background: #fff url(../images/tennisacademy.jpg) no-repeat center/100%;
+}
+.blocks .block .overlay{
+    width: 100%;
+    height: 100%;
+    background: #e7d18655;
+    padding: 10px;
+    transition: .5s all;
+    clip-path: circle(0 at 0 0);
+
+}
+.blocks .block:hover .overlay {
+    clip-path: circle(70% at 0 0);
+}
+/* Style for section 3 */
+section:nth-of-type(3) {
+    position: relative;
+    top: -117px;
+}
+section:nth-of-type(3) h1 {
+    text-align: center;
+    font-size:30px;
+    color: blue;
+}
+section:nth-of-type(3) h2 {
+    color: blue;
+}
+section:nth-of-type(3) hr {
+    width: 50%;
+    margin: auto;
+}
+.allmain {
+    width: 70%;
+    margin: auto;
+    margin-top: 8px;
+}
+.allmain .main1 {
+    float: left;
+    width: 45%;
+
+}
+.allmain .main1 p {
+    margin-left: 10px;
+    color: blue;
+}
+.allmain .main2 {
+    float: right;
+    width: 45%;
+}
+.allmain .main2 img {
+    border-radius: 10px 10px 0 0 ;
+    width: 100%;
+}
+/* Style for section 4 */
+section:nth-of-type(4) {
+    text-align: center;
+    position: relative;
+    width: 70%;
+    top: -100px;
+    margin: auto;
+}
+section:nth-of-type(4) h1 {
+    text-align: center;
+    font-size:30px;
+    color: blue;
+}
+section:nth-of-type(4) hr {
+    width: 50%;
+    margin: auto;
+}
+section:nth-of-type(4) table {
+    width: 100%;
+    margin: auto;
+    margin-top: 8px;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+tr:nth-child(2n) td {
+    background-color: gray;
+    border-color: gray;
+}
+tr td {
+    border: 1px solid #dddddd;
+}
+/* Syyle for section 5 */
+section:nth-of-type(5) {
+    text-align: center;
+    position: relative;
+    width: 70%;
+    top: -80px;
+    margin: auto;
+}
+section:nth-of-type(5) hr {
+    width: 50%;
+    margin: auto;
+}
+section:nth-of-type(5) h1 {
+    text-align: center;
+    font-size:30px;
+    color: blue;
+}
+.allblock {
+    width: 100%;
+    margin: auto;
+}
+
+.imgs {
+    width:30%;
+    float: left;
+    margin-top: 17px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.497);
+}
+.imgs img {
+    width: 100%;
+    
+}
+.imgs > div {
+    padding:6px;
+}
+.imgs h5 {
+    text-align: start;
+}
+.imgs p {
+    text-align: start;
+
+}
+/* Style for section 6 */
+section:nth-of-type(6) {
+    display: flex;
+    background-color: rgb(196, 155, 42);
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+
+}
+section:nth-of-type(6) img {
+width: 40%;
+}
+section:nth-of-type(6) iframe {
+ width: 50%;
+}
+/* Style for footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+
